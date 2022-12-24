@@ -8,4 +8,6 @@ import { ManagerModule } from './manager/manager.module';
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(private appService: AppService) {}
+}
